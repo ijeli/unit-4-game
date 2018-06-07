@@ -64,6 +64,8 @@
             var audio = new Audio('assets/audio/Juggernog.mp3');
             audio.play();
             if (totalScore == theNumber) {
+                var audio = new Audio('assets/audio/kaboom.mp3');
+                audio.play();
                 statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
                 wins++;
                 winGame = $("#wingame").html("SUCCESS: " + wins);
@@ -92,6 +94,8 @@
             var audio = new Audio('assets/audio/DoubleTap.mp3');
             audio.play();
             if (totalScore == theNumber) {
+                var audio = new Audio('assets/audio/kaboom.mp3');
+                audio.play();
                 statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
                 var audioLose = new Audio('assets/audio/zombie_scream.mp3');
                 audioLose.play();
@@ -125,6 +129,8 @@
             var audio = new Audio('assets/audio/Revive.mp3');
             audio.play();
             if (totalScore == theNumber) {
+                var audio = new Audio('assets/audio/kaboom.mp3');
+                audio.play();
                 statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
                 wins++
                 winGame = $("#wingame").html("SUCCESS: " + wins);
@@ -155,6 +161,8 @@
             var audio = new Audio('assets/audio/SpeedCola.mp3');
             audio.play();
             if (totalScore == theNumber) {
+                var audio = new Audio('assets/audio/kaboom.mp3');
+                audio.play();
                 statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
                 wins++
                 winGame = $("#wingame").html("SUCCESS: " + wins);
