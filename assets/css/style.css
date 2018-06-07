@@ -1,17 +1,19 @@
 body {
     background-image: url("../images/bgz.jpg");
+    font-family: 'Special Elite', cursive;
 }
 
 .text {
     font-size: 50px;
     text-align: right;
-    color: orange;
+    color: rgb(255, 115, 0);
     font-weight: bold;
+    
 }
 
 .text1 {
-    font-size: 35px;
+    font-size: 30px;
     text-align: right;
-    color: orange;
+    color: rgb(255, 115, 0);
     font-weight: bold;
 }
