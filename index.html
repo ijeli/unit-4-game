@@ -14,107 +14,98 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-    <header>
-        <h1>Make my number?</h1>
-    </header>
 
     <div class = "container">
-
+        <div class = "row">
+            <div class = "col-lg-12 text-center">
+                <header>
+                    <h1 class = "text" style = "text-align: center;">Turn on the Power</h1>
+                </header>
+            </div>
+        </div>
+        <div class "row">
+            <div class = "col-lg-12 text-center">
+                <h3 style = "color: orange;">Click the knobs to match the voltage to the value</h3>
+            </div>
+        </div>
+        <div class "row">
+            <div class = "col-lg-12 text-center">
+                <h3 style = "color: orange;">Go over and you're DEAD!</h3>
+            </div>
+        </div>
         <div class = "row">
             <div class = "col-lg-12">
                 <p></p>
             </div>
         </div>
-
+        <div class = "row">
+            <div class = "col-lg-2">
+                <span></span>
+            </div>
+            <div class = "col-lg-2">
+                <div class = "text" id = "theNumber"></div>
+            </div>
+            <div class = "col-lg-2">
+                <div class = "text" id = "addedScore"></div>
+            </div>
+            <div id = "statusImage" class = "col-lg-4">
+                <span></span>
+            </div>
+            <div class = "col-lg-2 text-right">
+                <div class = "row">
+                    <div class = "text1" id = "wingame">SUCCESS: </div>
+                    <div class = "text1" id = "losegame">FAILURE: </div>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-lg-12 cneter">
+                <p></p>
+            </div>
+        </div>
         <div class = "row">
             <div class = "col-lg-1">
                 <span></span>
             </div>
-
-            <div class = "col-lg-4">
-                <div id = "theNumber">THE NUMBER TO MAKE IS: </div>
+            <div class= "col-lg-2">
+                <img src = "assets/images/Juggernog.png" alt = "image1" class = "img-fluid"  id = "image1"/>
             </div>
-
-            <div class = "col-lg-2">
-                <div id = "wingame">WINS: </div>
+            <div class = "col-lg-1">
+                <span></span>
             </div>
-
-            <div class = "col-lg-2">
-                <div id = "losegame">LOSES: </div>
+            <div class= "col-lg-2">
+                <img src = "assets/images/Double_Tap.png" alt = "image2" class = "img-fluid" id = "image2"/>
+            </div>
+            <div class = "col-lg-1">
+                <span></span>
+            </div>
+            <div class= "col-lg-2">
+                <img src = "assets/images/Quick_Revive.png" alt = "image3" class = "img-fluid" id = "image3"/>
+            </div>
+            <div class = "col-lg-1">
+                <span></span>
+            </div>
+            <div class= "col-lg-2">
+                <img src = "assets/images/Speed_Cola.png" alt = "image4" class = "img-fluid" id = "image4"/>
             </div>
         </div>
-
-        <div class = "row">
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
-
-            <div class= "col-lg-2">
-                <img src = "assets/images/200x200.png" alt = "image1"  id = "image1"/>
-            </div>
-
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
-
-            <div class= "col-lg-2">
-                <img src = "assets/images/200x200.png" alt = "image2" id = "image2"/>
-            </div>
-
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
-
-            <div class= "col-lg-2">
-                <img src = "assets/images/200x200.png" alt = "image3" id = "image3"/>
-            </div>
-
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
-
-            <div class= "col-lg-2">
-                <img src = "assets/images/200x200.png" alt = "image4" id = "image4"/>
-            </div>
-
-        </div>
-
         <div class = "row">
             <div class = "col-lg-12">
                 <span></span>
             </div>
         </div>
-
         <div class = "row">
-
             <div class = "col-lg-1">
                 <span></span>
             </div>
-            
-            <div class = "col-lg-11">
-                Your total score is: 
-            </div>
-
         </div>
-
         <div class = "row">
-
             <div class = "col-lg-1">
                 <span></span>
             </div>
-
-            <div class = "col-lg-11">
-                <div id = "addedScore"></div>
-            </div>
-
         </div>
-
-
-
     </div>
     
-
-
     <script src="assets/javascript/script.js"></script>
 </body>
 

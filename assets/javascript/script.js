@@ -2,14 +2,15 @@
 //window.onload = function () 
 
     reset = function () {
-        totalScore = 0;
         theNumber = theNumberArray[Math.floor(Math.random() * theNumberArray.length)]; console.log(theNumber);
-        keyNumber = $("#theNumber").html("THE NUMBER TO MAKE IS: " + theNumber);
+        keyNumber = $("#theNumber").html(theNumber);
         imageOneValue = guessingNumbers[Math.floor(Math.random() * guessingNumbers.length)]; console.log("image one = " + imageOneValue); 
         imageTwoValue = guessingNumbers[Math.floor(Math.random() * guessingNumbers.length)]; console.log("image two = " + imageTwoValue);
         imageThreeValue = guessingNumbers[Math.floor(Math.random() * guessingNumbers.length)]; console.log("image three = " + imageThreeValue);
         imageFourValue = guessingNumbers[Math.floor(Math.random() * guessingNumbers.length)]; console.log("image four = " + imageFourValue);
-
+        totalScore = 0;
+        var audio = new Audio('#');
+        audio.play();
     }   
 
 
@@ -38,15 +39,19 @@
     var imageFourValue = guessingNumbers[Math.floor(Math.random() * guessingNumbers.length)]; console.log("image four = " + imageFourValue);
 
 
-    var keyNumber = $("#theNumber").html("THE NUMBER TO MAKE IS: " + theNumber); console.log("the number " + theNumber);
-    var winGame = $("#wingame").html("WINS: " + wins);
-    var loseGame = $("#losegame").html("LOSES: " + loses);
+    var keyNumber = $("#theNumber").html(theNumber); console.log("the number " + theNumber);
+    var winGame = $("#wingame").html("SUCCESS: " + wins);
+    var loseGame = $("#losegame").html("FAILURE: " + loses);
+    
 
     var addedScore = $("#addedScore");
     var firstButton = $("#image1");
     var secondButton = $("#image2");
     var thirdButton = $("#image3");
     var fourthButton = $("#image4");
+    var statusImage = $("#statusImage"); console.log(statusImage);
+
+    addedScore.html(totalScore);
 
     firstButton.on("click", function() {
         loses;
@@ -56,18 +61,20 @@
             addedScore.html(totalScore);
             console.log("this is The Number " + theNumber);
             console.log("this is Total Score " + totalScore);
+            var audio = new Audio('assets/audio/Juggernog.mp3');
+            audio.play();
             if (totalScore == theNumber) {
-                alert("win");
+                statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
                 wins++;
-                winGame = $("#wingame").html("WINS: " + wins);
+                winGame = $("#wingame").html("SUCCESS: " + wins);
                 totalScore = 0;
                 reset();
             }
         
             else if (totalScore >= theNumber) {
-                alert("lose");
+                statusImage.html("<img src = 'assets/images/zombie.gif' alt = 'zombie'/>");
                 loses++
-                loseGame = $("#losegame").html("LOSES: " + loses);
+                loseGame = $("#losegame").html("FAILURE: " + loses);
                 totalScore = 0;
                 reset();
             };
@@ -82,19 +89,27 @@
             addedScore.html(totalScore);
             console.log("this is The Number " + theNumber);
             console.log("this is Total Score " + totalScore);
+            var audio = new Audio('assets/audio/DoubleTap.mp3');
+            audio.play();
             if (totalScore == theNumber) {
-                alert("damn");
+                statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
+                var audioLose = new Audio('assets/audio/zombie_scream.mp3');
+                audioLose.play();
                 wins++
-                winGame = $("#wingame").html("WINS: " + wins);
+                winGame = $("#wingame").html("SUCCESS: " + wins);
                 totalScore = 0;
                 reset();
             }
             else if (totalScore >= theNumber) {
-                alert("suck");
+                statusImage.html("<img src = 'assets/images/zombie.gif' alt = 'zombie'/>"); 
+                var audioLose = new Audio('assets/audio/zombie_scream.mp3');
+                audioLose.play();
                 loses++
-                loseGame = $("#losegame").html("LOSES: " + loses);
+                loseGame = $("#losegame").html("FAILURE: " + loses);
                 totalScore = 0;
                 reset();
+
+
             };
         }
     });
@@ -107,19 +122,24 @@
             addedScore.html(totalScore);
             console.log("this is The Number " + theNumber);
             console.log("this is Total Score " + totalScore);
+            var audio = new Audio('assets/audio/Revive.mp3');
+            audio.play();
             if (totalScore == theNumber) {
-                alert("damn");
+                statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
                 wins++
-                winGame = $("#wingame").html("WINS: " + wins);
+                winGame = $("#wingame").html("SUCCESS: " + wins);
                 totalScore = 0;
                 reset();
             }
             else if (totalScore >= theNumber) {
-                alert("suck");
+                statusImage.html("<img src = 'assets/images/zombie.gif' alt = 'zombie'/>");
+                var audioLose = new Audio('assets/audio/zombie_scream.mp3');
+                audioLose.play();
                 loses++
-                loseGame = $("#losegame").html("LOSES: " + loses);
+                loseGame = $("#losegame").html("FAILURE: " + loses);
                 totalScore = 0;
                 reset();
+                
             };
         }
     });
@@ -132,17 +152,21 @@
             addedScore.html(totalScore);
             console.log("this is The Number " + theNumber);
             console.log("this is Total Score " + totalScore);
+            var audio = new Audio('assets/audio/SpeedCola.mp3');
+            audio.play();
             if (totalScore == theNumber) {
-                alert("damn");
+                statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
                 wins++
-                winGame = $("#wingame").html("WINS: " + wins);
+                winGame = $("#wingame").html("SUCCESS: " + wins);
                 totalScore = 0;
                 reset();
             }
             else if (totalScore >= theNumber) {
-                alert("suck");
+                statusImage.html("<img src = 'assets/images/zombie.gif' alt = 'zombie'/>");
+                var audioLose = new Audio('assets/audio/zombie_scream.mp3');
+                audioLose.play();
                 loses++
-                loseGame = $("#losegame").html("LOSES: " + loses);
+                loseGame = $("#losegame").html("FAILURE: " + loses);
                 totalScore = 0;
                 reset();
             };
