@@ -3,7 +3,7 @@
 
     reset = function () {
         theNumber = theNumberArray[Math.floor(Math.random() * theNumberArray.length)]; console.log(theNumber);
-        keyNumber = $("#theNumber").html(theNumber);
+        keyNumber = $("#theNumber").html(theNumber + " V");
         imageOneValue = guessingNumbers[Math.floor(Math.random() * guessingNumbers.length)]; console.log("image one = " + imageOneValue); 
         imageTwoValue = guessingNumbers[Math.floor(Math.random() * guessingNumbers.length)]; console.log("image two = " + imageTwoValue);
         imageThreeValue = guessingNumbers[Math.floor(Math.random() * guessingNumbers.length)]; console.log("image three = " + imageThreeValue);
@@ -39,7 +39,7 @@
     var imageFourValue = guessingNumbers[Math.floor(Math.random() * guessingNumbers.length)]; console.log("image four = " + imageFourValue);
 
 
-    var keyNumber = $("#theNumber").html(theNumber); console.log("the number " + theNumber);
+    var keyNumber = $("#theNumber").html(theNumber + " V"); console.log("the number " + theNumber);
     var winGame = $("#wingame").html("SUCCESS: " + wins);
     var loseGame = $("#losegame").html("FAILURE: " + loses);
     
@@ -58,7 +58,7 @@
         wins;
         if (this) {
             totalScore = totalScore + imageOneValue;
-            addedScore.html(totalScore);
+            addedScore.html(totalScore + " V");
             console.log("this is The Number " + theNumber);
             console.log("this is Total Score " + totalScore);
             var audio = new Audio('assets/audio/Juggernog.mp3');
@@ -86,7 +86,7 @@
         wins;
         if (this) {
             totalScore = totalScore + imageTwoValue;
-            addedScore.html(totalScore);
+            addedScore.html(totalScore + " V");
             console.log("this is The Number " + theNumber);
             console.log("this is Total Score " + totalScore);
             var audio = new Audio('assets/audio/DoubleTap.mp3');
@@ -119,7 +119,7 @@
         wins;
         if (this) {
             totalScore = totalScore + imageThreeValue;
-            addedScore.html(totalScore);
+            addedScore.html(totalScore + " V");
             console.log("this is The Number " + theNumber);
             console.log("this is Total Score " + totalScore);
             var audio = new Audio('assets/audio/Revive.mp3');
@@ -149,7 +149,7 @@
         wins;
         if (this) {
             totalScore = totalScore + imageFourValue;
-            addedScore.html(totalScore);
+            addedScore.html(totalScore + " V");
             console.log("this is The Number " + theNumber);
             console.log("this is Total Score " + totalScore);
             var audio = new Audio('assets/audio/SpeedCola.mp3');
