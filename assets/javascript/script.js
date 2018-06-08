@@ -70,14 +70,16 @@
                 wins++;
                 winGame = $("#wingame").html("SUCCESS: " + wins);
                 totalScore = 0;
+                document.body.style.backgroundImage = "url('assets/images/bgz.jpg')";
                 reset();
             }
         
             else if (totalScore >= theNumber) {
-                statusImage.html("<img src = 'assets/images/zombie.gif' alt = 'zombie'/>");
+                statusImage.html("<h1>YOU'RE DEAD</h1>");
                 loses++
                 loseGame = $("#losegame").html("FAILURE: " + loses);
                 totalScore = 0;
+                document.body.style.backgroundImage = "url('assets/images/tenor.gif')";
                 reset();
             };
         }
@@ -102,15 +104,17 @@
                 wins++
                 winGame = $("#wingame").html("SUCCESS: " + wins);
                 totalScore = 0;
+                document.body.style.backgroundImage = "url('assets/images/bgz.jpg')";
                 reset();
             }
             else if (totalScore >= theNumber) {
-                statusImage.html("<img src = 'assets/images/zombie.gif' alt = 'zombie'/>"); 
+                statusImage.html("<h1>YOU'RE DEAD</h1>");
                 var audioLose = new Audio('assets/audio/zombie_scream.mp3');
                 audioLose.play();
                 loses++
                 loseGame = $("#losegame").html("FAILURE: " + loses);
                 totalScore = 0;
+                document.body.style.backgroundImage = "url('assets/images/tenor.gif')";
                 reset();
 
 
@@ -135,15 +139,17 @@
                 wins++
                 winGame = $("#wingame").html("SUCCESS: " + wins);
                 totalScore = 0;
+                document.body.style.backgroundImage = "url('assets/images/bgz.jpg')";
                 reset();
             }
             else if (totalScore >= theNumber) {
-                statusImage.html("<img src = 'assets/images/zombie.gif' alt = 'zombie'/>");
+                statusImage.html("<h1>YOU'RE DEAD</h1>");
                 var audioLose = new Audio('assets/audio/zombie_scream.mp3');
                 audioLose.play();
                 loses++
                 loseGame = $("#losegame").html("FAILURE: " + loses);
                 totalScore = 0;
+                document.body.style.backgroundImage = "url('assets/images/tenor.gif')";
                 reset();
                 
             };
@@ -167,15 +173,17 @@
                 wins++
                 winGame = $("#wingame").html("SUCCESS: " + wins);
                 totalScore = 0;
+                document.body.style.backgroundImage = "url('assets/images/bgz.jpg')";
                 reset();
             }
             else if (totalScore >= theNumber) {
-                statusImage.html("<img src = 'assets/images/zombie.gif' alt = 'zombie'/>");
+                statusImage.html("<h1>YOU'RE DEAD</h1>");
                 var audioLose = new Audio('assets/audio/zombie_scream.mp3');
                 audioLose.play();
                 loses++
                 loseGame = $("#losegame").html("FAILURE: " + loses);
                 totalScore = 0;
+                document.body.style.backgroundImage = "url('assets/images/tenor.gif')";
                 reset();
             };
         }

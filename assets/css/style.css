@@ -17,3 +17,10 @@ body {
     color: rgb(255, 115, 0);
     font-weight: bold;
 }
+
+.text3 {
+    font-size: 30px;
+    text-align: right;
+    color: red;
+    font-weight: bold;
+}
