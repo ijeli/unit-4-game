@@ -6,7 +6,8 @@
     <title>Number Game</title>
     <link rel= "stylesheet" href = "assets/css/reset.css" type = "text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel = "stylesheet" href="assets/css/style.css" type= "text/css"/>
 </head>
 
@@ -15,97 +16,71 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-
-    <div class = "container">
+    <br>
+    <div class = "container ">
+        <br>
         <div class = "row">
             <div class = "col-lg-12 text-center">
                 <header>
-                    <h1 class = "text" style = "text-align: center;">Turn on the Power</h1>
+                    <h1 class = "text" style = "text-align: center;">TURN ON THE POWER!!</h1>
                 </header>
             </div>
         </div>
         <div class "row">
             <div class = "col-lg-12 text-center">
-                <h3 style = "color:  rgb(255, 115, 0);;">Click the knobs to match the voltage to the value</h3>
-            </div>
-        </div>
-        <div class "row">
-            <div class = "col-lg-12 text-center">
-                <h3 style = "color:  rgb(255, 115, 0);;">DON'T GO MESS UP OR YOU'RE DEAD!</h3>
+                <h2>MaTcH the VOLATAGES!</h2>
             </div>
         </div>
         <div class = "row">
-            <div class = "col-lg-12">
-                <p></p>
+            <div class = "col-lg-1"></div>
+            <div class = "col-lg-5">
+                <div id = "wingame" align = "center" class = "indicator">SYSTEM O.K.: </div>
+            </div>
+            <div class = "col-lg-5">
+                <div id = "losegame" align = "center" class = "indicator">SYSTEM ERROR: </div>
             </div>
         </div>
+        <br>
         <div class = "row">
-            <div class = "col-lg-2">
-                <span></span>
+            <div class = "col-lg-1"></div>
+            <div class = "col-lg-5">
+                <div align = "center" class = "indicator" id = "theNumber"></div>
             </div>
-            <div class = "col-lg-2">
-                <div class = "text" id = "theNumber"></div>
-            </div>
-            <div class = "col-lg-2">
-                <div class = "text" id = "addedScore"></div>
-            </div>
-            <div id = "statusImage" class = "col-lg-4 text3 text-center">
-                <span></span>
-            </div>
-            <div class = "col-lg-2 text-right">
-                <div class = "row">
-                    <div class = "text1" id = "wingame">SUCCESS: </div>
-                    <div class = "text1" id = "losegame">FAILURE: </div>
-                </div>
+            <div class = "col-lg-5">
+                <div align = "center" class = "indicator" id = "addedScore"></div>
             </div>
         </div>
+        <br>
         <div class = "row">
-            <div class = "col-lg-12 cneter">
-                <p></p>
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
-            <div class= "col-lg-2">
+            <div class = "col-lg-1"></div>
+            <div class= "col-lg-5">
                 <img src = "assets/images/Juggernog.png" alt = "image1" class = "img-fluid"  id = "image1"/>
             </div>
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
-            <div class= "col-lg-2">
+            <div class= "col-lg-5">
                 <img src = "assets/images/Double_Tap.png" alt = "image2" class = "img-fluid" id = "image2"/>
             </div>
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
-            <div class= "col-lg-2">
+        </div>
+        <br>
+        <div class = "row">
+            <div class = "col-lg-1"></div>
+            <div class= "col-lg-5">
                 <img src = "assets/images/Quick_Revive.png" alt = "image3" class = "img-fluid" id = "image3"/>
             </div>
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
-            <div class= "col-lg-2">
+
+            <div class= "col-lg-5">
                 <img src = "assets/images/Speed_Cola.png" alt = "image4" class = "img-fluid" id = "image4"/>
             </div>
         </div>
+        <br>
         <div class = "row">
-            <div id = "status" class = "col-lg-12 text-center">
-                <div ></div>
+            <div class = "col-lg-12" align = "center">
+                <h2>PLeAse DoNT DIE!</h2>
             </div>
         </div>
-        <div class = "row">
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-lg-1">
-                <span></span>
-            </div>
+    
         </div>
     </div>
+    <br><br>
     
     <script src="assets/javascript/script.js"></script>
 </body>
