@@ -99,7 +99,7 @@ firstButton.on("click", function() {
             audio.play();
             // statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
             wins++;
-            winGame = $("#wingame").html("SUCCESS: " + wins);
+            winGame = $("#wingame").html("SYSTEM O.K.: <br>" + wins);
             totalScore = 0;
             runwin()
             reset();
@@ -108,7 +108,7 @@ firstButton.on("click", function() {
         else if (totalScore >= theNumber) {
             // statusImage.html("<h1>YOU'RE DEAD</h1>");
             loses++
-            loseGame = $("#losegame").html("FAILURE: " + loses);
+            loseGame = $("#losegame").html("SYSTEM ERROR: <br>" + loses);
             totalScore = 0;
             // document.body.style.backgroundImage = "url('assets/images/tenor.gif')";
             runlose()
@@ -135,7 +135,7 @@ secondButton.on("click", function() {
             var audioLose = new Audio('assets/audio/zombie_scream.mp3');
             audioLose.play();
             wins++
-            winGame = $("#wingame").html("SUCCESS: " + wins);
+            winGame = $("#wingame").html("SYSTEM O.K.: <br>" + wins);
             totalScore = 0;
             runwin()
             reset();
@@ -145,7 +145,7 @@ secondButton.on("click", function() {
             var audioLose = new Audio('assets/audio/zombie_scream.mp3');
             audioLose.play();
             loses++
-            loseGame = $("#losegame").html("FAILURE: " + loses);
+            loseGame = $("#losegame").html("SYSTEM ERROR: <br>" + loses);
             totalScore = 0;
             // document.body.style.backgroundImage = "url('assets/images/tenor.gif')";
             runlose()
@@ -172,7 +172,7 @@ thirdButton.on("click", function() {
             audio.play();
             // statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
             wins++
-            winGame = $("#wingame").html("SUCCESS: " + wins);
+            winGame = $("#wingame").html("SYSTEM O.K.: <br>" + wins);
             totalScore = 0;
             runwin()
             reset();
@@ -182,7 +182,7 @@ thirdButton.on("click", function() {
             var audioLose = new Audio('assets/audio/zombie_scream.mp3');
             audioLose.play();
             loses++
-            loseGame = $("#losegame").html("FAILURE: " + loses);
+            loseGame = $("#losegame").html("SYSTEM ERROR: <br>" + loses);
             totalScore = 0;
             // document.body.style.backgroundImage = "url('assets/images/tenor.gif')";
             runlose()
@@ -208,7 +208,7 @@ fourthButton.on("click", function() {
             audio.play();
             // statusImage.html("<img src = 'assets/images/giphy.gif' alt = 'power' width = '350' height = '350'/>"); 
             wins++
-            winGame = $("#wingame").html("SUCCESS: " + wins);
+            winGame = $("#wingame").html("SYSTEM O.K.: <br>" + wins);
             totalScore = 0;
             runwin()
             reset();
@@ -218,7 +218,7 @@ fourthButton.on("click", function() {
             var audioLose = new Audio('assets/audio/zombie_scream.mp3');
             audioLose.play();
             loses++
-            loseGame = $("#losegame").html("FAILURE: " + loses);
+            loseGame = $("#losegame").html("SYSTEM ERROR: <br>" + loses);
             totalScore = 0;
             // document.body.style.backgroundImage = "url('assets/images/tenor.gif')";
             runlose()
