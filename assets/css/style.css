@@ -31,4 +31,14 @@ body {
     display: none;
 }
 
+.image {
+    overflow: hidden;
+    transition-duration: 2.0s;
+    transition-property: transform;
+}
+.image:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    cursor: pointer;
+}
 
